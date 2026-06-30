@@ -9,7 +9,31 @@ Early-stage prevention of metal-induced image degradation (signal voids, pixel d
 
 Dataset: 1,254 balance-curated images (Sagittal, Coronal, and Axial planes) sourced from multi-vendor clinical data (Siemens Healthineers and GE Healthcare). Patient-level splitting was enforced to prevent data leakage.
 
-Key Finding: YOLOv8 achieved an exceptional 99.4% classification accuracy under near-perfect conditions and demonstrated standout resilience against raw frequency-domain data anomalies ("spike" artifacts).  
+Key Finding: YOLOv8 achieved an exceptional 99.4% classification accuracy under near-perfect conditions and demonstrated standout resilience against raw frequency-domain data anomalies ("spike" artifacts). 
+
+## 📂 Dataset
+
+The dataset utilized in this study, **Knee-MRI-Metal-Scout**, consists of 1,254 knee MRI localizer slices balanced across sagittal, coronal, and axial planes. 
+
+The dataset is publicly hosted on **Roboflow Universe**. You can view the annotations, explore the images interactively, and download the dataset directly in the native YOLOv8 format (or any other computer vision format):
+
+
+👉 **[Download the Knee-MRI-Metal-Scout Dataset on Roboflow](https://app.roboflow.com/tabatta/yolo-dataset-rml4j/1/images)**
+
+### Dataset Structure Example (YOLOv8 Format)
+If you download the dataset via the link above, it will be organized as follows:
+```text
+├── dataset/
+│   ├── train/
+│   │   ├── images/   # 891 training slices
+│   │   └── labels/   # YOLOv8 format bounding box coordinates
+│   ├── valid/
+│   │   ├── images/   # 185 validation slices
+│   │   └── labels/   
+│   └── test/
+│       ├── images/   # 178 testing slices
+│       └── labels/
+```
 
 ⚙️ Experimental WorkflowThe methodological pipeline is systematically split into four core stages: 
 
