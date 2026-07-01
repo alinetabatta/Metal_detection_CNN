@@ -3,7 +3,7 @@
 This repository contains the official implementation and experimental framework for the automated detection of metallic artifacts during the initial localizer ("scout") phase of knee Magnetic Resonance Imaging (MRI) exams.
 By identifying metallic interference at the earliest inception of the clinical workflow, this framework provides a proactive trigger for technicians to instantly deploy specialized Metal Artifact Reduction Sequences (MARS, MAVRIC SL, WARP, O-MAR). Shifting the detection trigger from the final diagnostic stage to the scout scan drastically minimizes operational inefficiency, patient re-imaging rates, and associated healthcare costs.
 
-📌 Project OverviewObjective: 
+📌 Project Overview Objective: 
 
 Early-stage prevention of metal-induced image degradation (signal voids, pixel displacement) using automated deep learning tools on 1.5T knee MRI localizer scans.  Architectures Evaluated: A comparative paradigm analysis between YOLOv8n (Nano) (a fast single-stage object detector emphasizing spatial localization) and ResNet18 (a classic residual network focused on global classification). 
 
@@ -63,13 +63,4 @@ Noise Sensitivity: ResNet18 demonstrated superior stability in extreme sub-diagn
 Spatial Awareness: YOLOv8 achieved a mean Intersection over Union (mIoU) of 0.7021, confirming its capacity to reliably approximate the boundaries of irregular artifact shapes.  
 
 ## 🎓 Citation
-
-If you use this framework or reference our findings in your research, please cite our paper:
-
-```bibtex
-@inproceedings{rossi2026automated,
-  title     = {Automated Screening for Metallic Implants in MRI Scout using Deep Learning},
-  author    = {Rossi, Aline Tabatta and Schneider, Fabio K. and Mendes Junior, Jos{\'e} Jair Alves},
-  booktitle = {Proceedings of UTFPR},
-  year      = {2026}
-}
+This work has been submitted to the Brazilian Conference on Biomedical Engineering (2026). The citation will be provided after the review process.
